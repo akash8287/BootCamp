@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(206, 239, 240);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.music{
+    display: block;
+}
+.container{
+    transform-style: preserve-3d;
+    width: 25vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 2px 2px rgba(0,0,0,0.2), 5px 5px 2px rgba(0,0,0,0.2);
+    
+}
+.container img{
+    transform: translateZ(200px) rotateZ(-30deg);
+    border-bottom: rgb(0,0,0) 2px solid;
+    
+
+}
+
+.container:hover{
+    transition: all ease-in 0.4s;
+    transform: rotateX(30deg) rotateY(10deg);
+}
